@@ -1,0 +1,47 @@
+<html>
+<head><title>Event Driven client script onload</title>
+<script language="JavaScript">
+function f1()
+{
+document.bgColor="red";
+window.setTimeout("f2()",1200);
+}
+function f2()
+{
+document.bgColor="Purple";
+window.setTimeout("f3()",1200);
+}
+function f3()
+{
+document.bgColor="green";
+window.setTimeout("f4()",1200);
+}
+function f4()
+{
+document.bgColor="blue";
+window.setTimeout("f5()",1200);
+}
+function f5()
+{
+document.bgColor="yellow";
+window.setTimeout("f6()",1200);
+}
+function f6()
+{
+document.bgColor="0range";
+window.setTimeout("f7()",1200);
+}
+function f7()
+{
+document.bgColor="brown";
+window.setTimeout("f1()",1200);
+}
+function showText()
+{
+alert("Displaying seven distinct colors");
+}
+</Script>
+</head>
+<body onload="f1()" onUnload="showText()">
+</body>
+</html>

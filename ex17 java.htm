@@ -1,0 +1,53 @@
+<html>
+<head><title>Event Driven Client Side Script-OnMouseOver</title>
+<script language="JavaScript">
+function f1()
+{
+document.bgcolor="red";
+window.setTimeout("f2()",1200);
+}
+function f2()
+{
+document.bgcolor="purple";
+window.setTimeout("f3()",1200);
+}
+function f3()
+{
+document.bgcolor="green";
+window.setTimeout("f4()",1200);
+}
+function f4()
+{
+document.bgcolor="Yellow";
+windoow.setTimeout("f5()",1200);
+}
+function f5()
+{
+document.bgcolor="blue";
+window.setTimeout("f6()",1200);
+}
+function f6()
+{
+document.bgcolor="orange";
+window.setTimeout("f7()",1200);
+}
+function f7()
+{
+document.bgcolor="brown";
+window.SetTimeout("f1()",1200);
+}
+functionshowText()
+{
+window.status="displaying seven distinct colors";
+}
+</script>
+</head>
+<body>
+<center><h1>Event Driven client side script</h1>
+<form>
+<input type="button"value="CHANGE"OnMouseOver="f1()">
+<input type="button"value="CLICK"OnClick="showText()">
+</form>
+</center>
+</body>
+</html>
